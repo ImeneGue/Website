@@ -1,0 +1,82 @@
+/* Étape 1) Ajustez le body */
+
+body {
+    background-image: url("../images/ArrierePlan.png");
+    background-size: 80px 80px;
+    min-width: 800px;
+}
+
+
+/* Étape 2) Ajustez le conteneur du haut */
+
+.conteneur_haut {
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+
+.zone_droite {
+    min-height: calc(100vh - 100px);
+}
+
+
+/* Étape 3) Ajustez le conteneur du bas (pied de page)  et ses enfants*/
+
+.conteneur_bas {
+    padding: 20px;
+    height: 60px;
+    background-color: var(--couleur1a);
+    color: var(--couleur1b);
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 70px;
+    background-color: var(--couleur1b);
+    min-height: 70px;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 70px;
+    background-color: var(--couleur1b);
+    min-height: 70px;
+}
+
+.menu>div {
+    font-weight: bold;
+    text-align: center;
+    width: 138px;
+    padding: 10px;
+    background-color: var(--couleur1a);
+    color: white;
+    border: black 1px solid;
+    height: 48px;
+}
+
+.menu>div>a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+table,
+td,
+th {
+    border: 2px black solid;
+    padding: 2px;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: var(--couleur1a);
+    color: white;
+    width: 60px;
+}
+
+td {
+    background-color: white;
+    color: black;
+    width: 60px;
+    text-align: center;
+}
